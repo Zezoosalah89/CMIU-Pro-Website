@@ -1,0 +1,89 @@
+@import url('../general_style.css');
+
+/* phase 1 */
+.phase1{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+.phase1 h1{
+    font-size: 70px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    position: relative;
+}
+.phase1 h1::after{
+    content: "";
+    position: absolute;
+    background-color: red;
+    height: 5px;
+    width: 100%;
+    left: 0;
+    bottom: -10px;
+}
+.ph1-row{
+    display: flex;
+    flex-direction: row;
+}
+.ph1-col img{
+    height: 300px;
+    width: 200px;
+    margin: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .8);
+    border-radius: 4px;
+    transition: transform 0.5s;
+}
+.ph1-col img:hover{
+    transform: translateY(-10px);
+}
+.ph1-col h5{
+    font-size: 20px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, .8);
+    transition: transform 0.5s;
+}
+.ph1-col h5:hover{
+    transform: translateY(-10px);
+    color: rgb(162, 0, 255);
+}
+.ph1-col a{
+    text-decoration: none;
+    color: black;
+}
+
+/* end phase 1 */
+/* phase 2 */
+.phase2{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+.phase2 h1{
+    font-size: 70px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    position: relative;
+}
+.phase2 h1::after{
+    content: "";
+    position: absolute;
+    background-color: red;
+    height: 5px;
+    width: 100%;
+    left: 0;
+    bottom: -10px;
+}
+@media(max-width:767px){
+    .ph1-row{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}

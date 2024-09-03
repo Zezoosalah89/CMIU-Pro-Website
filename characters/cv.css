@@ -1,0 +1,258 @@
+@import url('../general_style.css');
+
+
+strong{
+    color: goldenrod;
+}
+h2{
+    color: goldenrod;
+}
+a{
+    color: rgb(141, 141, 255);
+}
+
+/* Header Styles */
+.header {
+    background-position: center;
+    color: rgb(146, 1, 1);
+    padding: 20px 10px;
+    text-align: center;
+}
+
+/* Profile Picture Styles */
+.profile-container {
+    display: inline-block;
+    background: rgb(146, 1, 1);
+    padding: 7px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 300px; /* Adjust size as needed */
+    height: 300px; /* Adjust size as needed */
+    object-fit: cover; /* Ensures the image covers the circle */
+}
+
+/* Nickname Styles */
+.nickname {
+    margin: 10px;
+    font-size: 56px;
+    font-weight: 700;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* Information Section */
+.info-section {
+    background-color: black;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+    text-align: center;
+    color: white;
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+    font-size: 20px;
+}
+
+/* Bio Section */
+.bio-section {
+    padding: 20px;
+    margin: 20px auto;
+    background-color: black;
+    border-radius: 10px;
+    max-width: 800px;
+    font-size: 18px;
+    color: white;
+}
+
+.actor-link {
+    color: rgb(141, 141, 255);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.actor-link:hover {
+    color: #571c84;
+}
+
+/* Powers Section */
+.powers-section {
+    background-color: black;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+    color: white;
+    text-align: center;
+}
+
+.powers-list, .gadget-list {
+    list-style: none;
+    padding: 0;
+    font-size: 20px;
+}
+
+/* Gadgets Section */
+.gadgets-section {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+    text-align: center;
+}
+
+.gadget {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.gadget img {
+    width: 50%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Planet Section */
+.planet-section {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+    text-align: center;
+}
+
+.planet-gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.planet-gallery img {
+    width: 48%;
+    border-radius: 10px;
+    object-fit: cover; /* Ensures the image maintains its aspect ratio */
+}
+
+/* Appearance and Lifestyle Section */
+.appearance-lifestyle-section {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+    text-align: center;
+}
+
+.appearance-lifestyle-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.appearance-lifestyle-section p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Weakness Section */
+.weakness-section {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+    text-align: center;
+}
+
+.weakness-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.weakness-container img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.weakness-details {
+    text-align: left;
+}
+
+.weakness-details h3 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.weakness-details p {
+    margin: 5px 0 0;
+    font-size: 18px;
+}
+
+/* Suits Section */
+.suit-collage-section {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+    text-align: center;
+}
+
+.suit-collage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.suit-collage figure {
+    width: 45%;
+    margin: 10px 0;
+}
+
+.suit-collage img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover; /* Ensures images cover the figure element properly */
+}
+
+.suit-collage figcaption {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .planet-gallery {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .profile-picture {
+        width: 200px;
+        height: 200px;
+    }
+
+    .planet-gallery img, .suit-collage img {
+        width: 100%;
+    }
+
+    .suit-collage figure {
+        width: 100%;
+    }
+}
