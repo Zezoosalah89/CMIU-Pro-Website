@@ -38,6 +38,10 @@
 <body>
     <!-- phases -->
     <div id="container">
+
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search characters...">
+         </div>
         <!-- phase 1 -->
         <div class="phase1">
             <h1>Phase I</h1>
@@ -147,6 +151,16 @@
             </div>
         </div>
         <!-- end phase3 -->
+        <!-- phase4 -->
+        <div class="phase1">
+            <h1>Phase IV</h1>
+            <div class="ph1-row">
+                <div class="ph1-col">
+                    <a href="apocalypse.html"><img src="images/posters/apocalypse.jpg"></a>
+                    <a href="apocalypse.html"><h5>Captain Masr vs. <br> Mephistofist: APOCALYPSE</h5></a>
+                </div>
+            </div>
+        </div>
         <!--phase5-->
         <div class="phase1">
             <h1>Phase CIƆ</h1>
@@ -157,7 +171,7 @@
                 </div>
             </div>
         </div>
-        <!--end phase5-->
+        <!--end phase-->
     </div>
     <!-- end phases -->
 </body>
@@ -218,6 +232,21 @@ let clickedElm = e.target;
 if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
     nav.classList.remove("active");
 }
+});
+
+// Search filter function
+document.getElementById("search").addEventListener("keyup", function () {
+    let filter = this.value.toLowerCase();
+    let items = document.querySelectorAll(".ph1-col");
+
+    items.forEach(item => {
+        let title = item.querySelector("h5").textContent.toLowerCase();
+        if (title.includes(filter)) {
+            item.style.display = "";
+        } else {
+            item.style.display = "none";
+        }
+    });
 });
 </script>
 

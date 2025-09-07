@@ -1,5 +1,20 @@
 @import url('../general_style.css');
 
+/* Search Bar Styles */
+.search-container {
+    text-align: center;
+    margin: 20px;
+}
+
+#search {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    font-size: 16px;
+    border: 3px solid goldenrod;
+    border-radius: 5px;
+}
+
 /* phase 1 */
 .phase1{
     width: 90%;
@@ -27,7 +42,6 @@
 }
 .ph1-row{
     display: flex;
-    flex-direction: row;
 }
 .ph1-col img{
     height: 300px;
@@ -80,9 +94,9 @@
     left: 0;
     bottom: -10px;
 }
-@media(max-width:767px){
+@media(max-width:500px){
     .ph1-row{
-        display: flex;
+        flex: 1;
         flex-direction: column;
     }
     
