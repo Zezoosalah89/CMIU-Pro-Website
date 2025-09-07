@@ -32,3 +32,35 @@ body.addEventListener("click" , e =>{
         nav.classList.remove("active");
     }
 });
+
+
+
+const setButtons = document.querySelectorAll(".set-btn");
+const cards = document.querySelectorAll(".card");
+
+// Default visible set = U2
+let currentSet = "U2";
+
+function updateDisplayedCards(set) {
+    currentSet = set;
+
+    // Show only matching cards
+    cards.forEach(card => {
+        card.style.display = card.dataset.set === set ? "block" : "none";
+    });
+
+    // Update active button
+    setButtons.forEach(btn => {
+        btn.classList.toggle("active", btn.dataset.set === set);
+    });
+}
+
+// Add click event for each button
+setButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        updateDisplayedCards(button.dataset.set);
+    });
+});
+
+// Initialize page with U2 visible
+updateDisplayedCards("U2");

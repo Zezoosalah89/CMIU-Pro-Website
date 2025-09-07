@@ -57,3 +57,35 @@ img{
     text-decoration: none;
     color: black;
 }
+
+.set-switch {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.set-btn {
+    padding: 8px 5px;
+    background-color: white;
+    color: black;
+    border-width: 2px;
+    border-color: goldenrod;
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.set-btn:hover {
+    background-color: rgb(227, 223, 223);
+    color: black;
+}
+
+.set-btn.active {
+    background-color: goldenrod;
+    color: black;
+    font-weight: bold;
+}
